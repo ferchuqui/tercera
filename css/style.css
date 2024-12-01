@@ -1,0 +1,735 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+/* Fuentes principales */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-rendering: optimizeLegibility !important;
+    background: #f3f3f5;
+    scroll-behavior: smooth;
+}
+
+/* Estilo general para imágenes */
+/* Navbar */
+.navbar {
+    background-color: #f8f9fa; /* Fondo claro */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.nav-link,
+.navbar-brand {
+    font-size: 18px; /* Tamaño de fuente */
+    font-weight: 700; /* Grosor de la fuente */
+    text-transform: uppercase; /* Mayúsculas */
+    letter-spacing: 1.5px; /* Espaciado entre letras */
+    transition: all 0.3s ease; /* Transición para efectos */
+}
+
+i{
+    color: #ff8243 !important
+}
+
+/* Animación navideña */
+@keyframes christmas-blink {
+    0% {
+        color: red;
+        text-shadow: 0 0 10px red;
+    }
+    50% {
+        color: green;
+        text-shadow: 0 0 10px green;
+    }
+    100% {
+        color: red;
+        text-shadow: 0 0 10px red;
+    }
+}
+
+/* Aplicar animación navideña */
+.nav-link:hover,
+.navbar-brand:hover {
+    animation: christmas-blink 1s infinite;
+    transition: all 0.3s ease;
+}
+
+/* Barra de búsqueda */
+form .form-control {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 0.5rem;
+    width:190px;
+    transition: all 0.3s ease;
+}
+
+form .btn-outline-success {
+    border: none; /* Elimina el borde */
+    border-radius: 50%; /* Hace el botón circular */
+    width: 40px; /* Ancho del botón */
+    height: 40px; /* Alto del botón */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25d366; /* Color verde */
+    color: white; /* Color del icono */
+    transition: all 0.3s ease;
+    padding: 0; /* Elimina relleno interno */
+}
+
+/* Íconos del navbar */
+.navbar .uil {
+    font-size: 1.5rem;
+    color: #555;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar .uil:hover {
+    color: #007bff; /* Cambia a azul al hacer hover */
+}
+
+/* Sección principal (main banner) */
+.main-banner {
+    padding: 200px 0 300px;
+    min-height: 100vh;
+    position: relative;
+    background-color: rgb(214, 238, 214);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.banner-img {
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+span{
+    color: #ff8243;
+}
+h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 90px !important
+}
+
+
+/* Realiza la imagen deformada */
+.banner-img {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    animation: biani 4.5s linear infinite alternate;
+    box-shadow: 0 0px 20px rgba(36, 39, 37, 0.3);
+  }
+@keyframes biani {
+    0% {
+        border-radius: 48% 52% 57% 43% / 34% 44% 56% 66%;
+    }
+    25% {
+        border-radius: 62% 38% 64% 36% / 34% 55% 45% 66%;
+    }
+    50% {
+        border-radius: 43% 57% 51% 49% / 33% 42% 58% 67%;
+    }
+    100% {
+        border-radius: 40% 60% 43% 57% / 52% 32% 68% 48%;
+    }
+}
+
+/* Tamaño base para todos los dispositivos */
+.navbar .nav-link,
+.navbar-brand {
+    font-size: 0.75rem; /* 16px por defecto */
+    padding-right: 200px;
+}
+
+
+
+/******************************************/
+                 /* Inicia Brand */
+.brands-sec {
+                    padding: 200px 0 300px;
+                    position: relative;
+                    background-color:rgb(240, 239, 225);
+                    font-weight: 700;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                }
+ .h5-title{
+    font-size: 2.5rem;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+ }    
+ .brands-row{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -15px;
+ } 
+
+ .brands-box {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 0 15px;
+}
+.brands-box:hover {
+    filter: brightness(0.3);
+    opacity: 0.9;
+}
+
+.brand-title .h5-title {
+    font-weight: 500;
+    letter-spacing: 2px;
+    opacity: 0.7;
+    text-transform: uppercase;
+}
+                 /* Termina Brand */
+
+
+/* Boton Navideño */
+
+#santaButton {
+    background: linear-gradient(45deg, #ff0000, #ff6347); /* Rojo brillante */
+    border: none;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#santaButton:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.5);
+}
+
+/* Termina Boton Navideño */
+
+/* Inicia About-sec */
+
+.section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.sec-sub-title {
+    background: #f3f3f5;
+    border-radius: 60px;
+    box-shadow: 9px 9px 12px #e4e4e4, -9px -9px 12px #ffffff;
+    color: #ff8243;
+    display: inline-block;
+    font-size: 14px;
+    padding: 3px 20px;
+    text-transform: uppercase;
+}
+
+.sec-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.h2-title {
+    font-size: 46px;
+    line-height: 56px;
+    margin-bottom: 15px;
+    position: relative;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.h2-title span, .h3-title span, .h4-title span, .h5-title span, .sub-title span {
+    display: block;
+}
+
+.about-video-img {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 55vh;
+    min-height: 400px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    box-shadow: 0 0 20px rgb(36 39 37 /30%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play-btn{
+    width: 90px;
+    height: 90px;
+    background: #f3f3f5;
+    box-shadow: 9px 9px 12px #b2b2b3, -9px -9px 12px #ffffff;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    vertical-align: middle;
+    position: relative;
+    z-index: 2;
+    padding-left: 4px;
+    padding-top: 4px;
+    font-size: 40px;
+}
+
+.play-btn:hover{
+    box-shadow: inset 9px 9px 12px #cccccc, inset -9px -9px 12px #ffffff;
+}
+
+.play-btn-wp{
+    text-align: center;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-btn-wp span{
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #bfbfbf;
+}
+/* Termina About-sec */
+
+
+/* Inicia Our Section */
+
+.repeat-img {
+    background-sizee: contain;
+    background-repeat: repeat;
+}
+.menu-tab-wp {
+    margin-bottom: 80px;
+}
+
+.menu-tab ul{
+    padding: 10px;
+    display: inline-block;
+    border-radius: 60px;
+    background: linear-gradient(145deg, #ececec, #ffffff);
+    box-shadow: 28px 28px 55px #d4d4d4, -28px -28px 55px #ffffff;
+    position: relative;
+    z-index: 2;
+}
+.menu-tab ul li, .menu-tab ul .filter-active{
+    /* background-color: red; */
+    display: inline-flex;
+    text-transform: capitalize;
+    font-size: 18px;
+    line-height: normal;
+    cursor: pointer;
+    padding: 10px 26px;
+    border-radius: 30px;
+    transition: 0.3s;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter-active {
+    position: absolute;
+    left: 0;
+    top: 12px;
+    min-height: 50px;
+    z-index: -1
+}
+.menu-tab ul li img {
+    margin-right: 10px;
+    position: relative;
+    top: 1px;
+}
+.menu-tab ul .filter-active{
+    color: #ffffff;
+    background: linear-gradient(145deg, #e3a92b, #ffc933)
+}
+.menu-list-row .bydefault_show .dish-box-wp {
+    display: inline-block !important;
+}
+.dish-box-wp{
+    display: none;
+}
+
+.dish-box {
+    border-radius: 30px;
+    background: linear-gradient(145deg, #ececec, #ffffff);
+    box-shadow: 28px 28px 45px #d4d4d4, -28px -28px 45px #ffffff;
+    display: flow-root;
+    padding: 0 30px 40px;
+    padding-top: 0;
+    margin: 130px 0 30px;
+    transition: 0.8s cubic-bezier(0.22, 0.78, 0.45, 1.02);
+}
+.dish-box:hover{
+    transform: scale(1.1);
+}
+
+.dist-img {
+    margin-top: -130px;
+    /* El margen superior de la card flota */
+    margin-bottom: 30px;
+}
+.dist-img img {
+    box-shadow: 28px 28px 45px #d4d4d4, -28px -28px 45px ;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.dish-rating {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.dish-rating span {
+    color: #ffc933;
+    margin-left: 2px;
+    font-size: 22px;
+}
+.dish-title {
+    padding: 0 30px;
+}
+
+.dish-title .h3-title {
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    color: #0d0d25;
+    transition: 0.3s;
+    min-height: 76px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-weight: 900;
+}
+.dish-title p {
+    color: #bfbfbf;
+}
+.dish-info ul, .dist-bottom-row ul {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+.dish-info ul li {
+    display: inline-block;
+    flex: 1;
+}
+
+.dish-info ul li:last-child {
+    text-align: right;
+    border-left: 2px solid rgb(204 204 204 /30%);
+}
+.dist-bottom-row ul li:last-child{
+    text-align: right;
+}
+.dish-info ul li p {
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-bottom: 2px;
+    font-weight: 300;
+}
+.dish-info ul li b{
+    font-weight: 600;
+}
+.dish-info, .dist-bottom-row{
+    padding: 0 30px;
+}
+
+.dish-info {
+    border-bottom: 2px solid rgb(204 204 204 /30%);
+    margin: 30px 0 30px;
+    padding-bottom: 30px;
+}
+.dist-bottom-row ul li{
+    display: flex;
+    align-items: center;
+}
+.dist-bottom-row ul li b {
+    font-size: 30px;
+}
+.dish-add-btn {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    transition: 0.3s;
+    background: linear-gradient(145deg, #ffc954, #ffbc00);
+    box-shadow: inset 4px 4px 8px #d6a029, inset -4px -4px 8px #ffd837;
+}
+
+.dish-add-btn i {
+    color: #ffffff;
+    font-size: 22px;
+}
+.dish-add-btn:hover {
+    background: linear-gradient(145deg, #e3a92b, #ffc933);
+}
+/* Termina Our Section */
+
+/* Inicia Efecto nieve */
+
+.snowflake {
+    position: absolute;
+    top: 0;
+    color: white;
+    pointer-events: none;
+    animation: fall linear;
+    z-index: 10; /* Asegura que se muestre sobre el contenido */
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
+
+
+/* Termina Efecto nieve  */
+
+
+/* Inicia Boton Sugerencia */
+
+/* Botón sugerencia */
+.floating-arrow {
+    position: fixed;
+    bottom: 50px; /* Posición relativa al botón de música */
+    right: 30px; /* Alineado con el botón de música */
+    font-size: 2rem;
+    color: #ff0000; /* Rojo brillante */
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    animation: float 1.5s infinite;
+    z-index: 1000; /* Asegura que esté sobre otros elementos */
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Animación flotante */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+/* Termina Boton Sugerencia */
+
+
+/* Inicia Boton Whatsapp */
+
+/* Botón de WhatsApp */
+#whatsappButton {
+    position: fixed;
+    bottom: 270px; /* Distancia desde el borde inferior */
+    right: 80px; /* Distancia desde el borde derecho */
+    z-index: 1000; /* Asegura que esté sobre otros elementos */
+    background-color:transparent; /* Color de fondo verde WhatsApp */
+    border-radius: 50%; /* Hace el botón circular */
+    
+    padding: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#whatsappButton img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#whatsappButton:hover {
+    transform: scale(1.1); /* Efecto de agrandamiento al pasar el cursor */
+    
+}
+
+
+/* Termina Boton Whatsapp */
+
+/* Inicia Two Col section */
+
+.xxl-title {
+    text-transform: capitalize;
+    font-size: 52px;
+    line-height: 72px;
+    margin-bottom: 30px;
+}
+
+.bakerstreet-img {
+    width: 100%;
+    height: 600px;
+    background-image: url('img/Bakerstreet.jpg');
+    background-size: cover;
+    background-position: center;
+    animation: biani 4.5s linear infinite alternate;
+    box-shadow: 0 0px 20px rgba(36, 39, 37, 0.3);
+    border-radius: 48% 52% 57% 43% / 34% 44% 56% 66%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #0d0d25;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+}
+
+
+/* Termina Two Col Section */
+
+/* Inicia Book section */
+
+.book-table {
+    overflow: hidden;
+}
+
+
+.book-table-shape img {
+    position: absolute;
+    top: -10px;
+    right: 73%;
+    width: 540px;
+}
+
+.book-table-shape.book-table-shape2 img{
+    left: 74%;
+    transform: scale(-1, 1);
+}
+
+.book-table-info {
+    margin: 30px 0 20px;
+}
+
+.table-title {
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+.table-title p {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0;
+}
+
+.call-now {
+    border-left: 3px dotted rgb(13 13 37 /50%);
+    border-right: 3px dotted rgb(13 13 37 /50%);
+    padding: 15px 0;
+}
+
+.call-now i {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 26px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    background: #f3f3f5;
+    box-shadow: 9px 9px 12px #b2b2b3, -9px -9px 12px #ffffff;
+    color: #ff8243;
+}
+
+.call-now a {
+    font-size: 32px;
+    font-weight: 500;
+    color: #0d0d25;
+    transition: 0.8s cubic-bezier(0.22, 0.78, 0.45, 1.02);
+}
+
+.call-now a:hover, .contact-info a:hover {
+    color: #fcbc30;
+}
+/* Termina Book Section */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 991px) {
+    .nav-link,
+    .navbar-brand {
+        font-size: 16px; /* Reduce el tamaño en dispositivos más pequeños */
+        font-weight: 600;
+    }
+
+    .floating-arrow {
+        display: none !important;
+    }
+
+    #whatsappButton {
+        display: none !important;
+    }
+
+}
+/* Tamaño para pantallas XL (1200px a 1399px) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    .navbar .nav-link,
+    .navbar-brand {
+        font-size: 1.25rem; /* Mantiene el tamaño en XL */
+    }
+}
+
+/* Tamaño para pantallas XXL (1400px y mayores) */
+@media (min-width: 1400px) {
+    .navbar .nav-link,
+    .navbar-brand {
+        font-size: 1.3rem; /* Aumenta a 1.25rem en XXL (20px) */
+    }
+}
