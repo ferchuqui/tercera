@@ -761,9 +761,12 @@ h1, h2, h3, h4, h5, h6 {
 
 
 @media (max-width: 495px) {
+    .container{
+        display: flex;
+    }
     .navbar {
         padding: 0.5rem; /* Reduce el relleno */
-        display: flex;
+        
     }
 
     .navbar-toggler {
