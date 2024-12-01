@@ -9,13 +9,25 @@ body {
     scroll-behavior: smooth;
 }
 
-/* Estilo general para imágenes */
+/* Estilo general para imágenes */
+
 /* Navbar */
 .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 0.5rem 1 rem;
     background-color: #f8f9fa; /* Fondo claro */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
 }
-
+/* .navbar-toggler {
+    margin-left: auto;
+} */
+.navbar-collapse{
+    flex-grow: 1;
+    justify-content: flex-end;
+}
 .nav-link,
 .navbar-brand {
     font-size: 18px; /* Tamaño de fuente */
@@ -23,6 +35,7 @@ body {
     text-transform: uppercase; /* Mayúsculas */
     letter-spacing: 1.5px; /* Espaciado entre letras */
     transition: all 0.3s ease; /* Transición para efectos */
+    flex-shrink: 0;
 }
 
 i{
@@ -731,5 +744,36 @@ h1, h2, h3, h4, h5, h6 {
     .navbar .nav-link,
     .navbar-brand {
         font-size: 1.3rem; /* Aumenta a 1.25rem en XXL (20px) */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 495px) {
+    .navbar {
+        padding: 0.5rem; /* Reduce el relleno */
+    }
+
+    .navbar-toggler {
+        margin: 0; /* Asegura que el botón no tenga margen extraño */
+    }
+
+    .navbar-brand {
+        font-size: 16px; /* Ajusta el tamaño del logo para pantallas pequeñas */
+    }
+
+    .navbar-nav {
+        flex-direction: column; /* Asegura que los enlaces del menú se alineen verticalmente */
     }
 }
