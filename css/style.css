@@ -761,6 +761,9 @@ h1, h2, h3, h4, h5, h6 {
 
 
 @media (max-width: 495px) {
+    html, body {
+        width: 495px;
+    }
     
     .navbar {
         padding: 0.5rem; /* Reduce el relleno */
