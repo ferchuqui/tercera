@@ -255,6 +255,38 @@ document.addEventListener("DOMContentLoaded", function () {
 
 /* Termina Boton Rojo */
 
+
+/* Inicia Desplazamiento de menu */
+
+document.addEventListener("DOMContentLoaded", function () {
+    const toggler = document.querySelector(".navbar-toggler"); // Botón de hamburguesa
+    const navbar = document.querySelector("#navbarNav"); // Menú desplegable
+    const main = document.querySelector("main"); // Elemento main
+
+    toggler.addEventListener("click", function () {
+        if (navbar.classList.contains("show")) {
+            // Si el menú está visible, restaurar la posición del main
+            main.style.transform = "translateY(0)";
+        } else {
+            // Si el menú está oculto, calcular la altura del navbar y desplazar el main hacia abajo
+            const navbarHeight = navbar.scrollHeight; // Altura dinámica del menú
+            main.style.transform = `translateY(${navbarHeight}px)`;
+        }
+    });
+
+    // También podemos escuchar el evento `hidden.bs.collapse` de Bootstrap para asegurar el comportamiento
+    navbar.addEventListener("hidden.bs.collapse", function () {
+        main.style.transform = "translateY(0)";
+    });
+
+    navbar.addEventListener("shown.bs.collapse", function () {
+        const navbarHeight = navbar.scrollHeight;
+        main.style.transform = `translateY(${navbarHeight}px)`;
+    });
+});
+
+/* Termina Desplazamiento de menu */
+
 /* Festejo de navidad */
 
 

@@ -59,8 +59,8 @@ i{
 }
 
 /* Aplicar animación navideña */
-.nav-link:hover,
-.navbar-brand:hover {
+/* Se arreglo el problema item debe ser presionado para cambiar de color */
+.navbar .nav-item .nav-link:hover {
     animation: christmas-blink 1s infinite;
     transition: all 0.3s ease;
 }
