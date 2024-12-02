@@ -607,6 +607,23 @@ h1{
     border-radius: 48% 52% 57% 43% / 34% 44% 56% 66%;
 }
 
+.two-col-sec {
+    overflow: hidden; /* Asegura que nada salga del contenedor */
+    padding: 20px; /* Espaciado interno para mejorar la legibilidad */
+}
+
+.two-col-sec .sec-img img {
+    max-width: 100%; /* Evita que las imágenes excedan el contenedor */
+    height: auto; /* Mantiene la proporción */
+    object-fit: cover; /* Ajusta la imagen dentro del contenedor */
+    border-radius: 10px; /* Opcional: bordes redondeados para estética */
+}
+
+.two-col-sec .sec-text {
+    word-wrap: break-word; /* Evita que texto largo desborde */
+}
+
+
 h1, h2, h3, h4, h5, h6 {
     color: #0d0d25;
     font-family: 'Playfair Display', serif;
