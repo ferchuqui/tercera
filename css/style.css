@@ -168,7 +168,7 @@ h1{
 /******************************************/
                  /* Inicia Brand */
 .brands-sec {
-                    padding: 200px 0 300px;
+                    padding: 20px 0 30px;
                     position: relative;
                     background-color:rgb(240, 239, 225);
                     font-weight: 700;
@@ -723,6 +723,10 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 16px; /* Reduce el tamaño en dispositivos más pequeños */
         font-weight: 600;
     }
+
+    .h5-title {
+        font-size: 1.5rem;
+    }
     
     .floating-arrow {
         display: none !important;
@@ -734,6 +738,28 @@ h1, h2, h3, h4, h5, h6 {
     .banner-text .btn {
         margin-bottom: 30px; /* Ajusta el valor según el espacio deseado */
     }
+
+
+    .brands-row {
+        display: flex;
+        flex-direction: column; /* Organiza los logos en columna */
+        align-items: center; /* Centra los logos horizontalmente */
+        gap: 30px; /* Espaciado entre los logos */
+        width: 100%; /* Asegúrate de que el contenedor no exceda el ancho del viewport */
+        
+    }
+
+    .brands-box {
+        width: 60%; /* Ajusta el tamaño de los logos para móviles */
+        text-align: center; /* Centra los logos dentro de su contenedor */
+    }
+
+    .brands-box img {
+        width: 100%; /* Los logos ocuparán el 100% del contenedor reducido */
+        height: auto; /* Mantiene la proporción de los logos */
+    }
+    
+
 
 }
 /* Tamaño para pantallas XL (1200px a 1399px) */
