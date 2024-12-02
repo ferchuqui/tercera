@@ -100,6 +100,8 @@ form .btn-outline-success {
 }
 
 /* Sección principal (main banner) */
+
+
 .main-banner {
     padding: 200px 0 300px;
     min-height: 100vh;
@@ -126,7 +128,7 @@ span{
 }
 h1{
     font-family: 'Playfair Display', serif;
-    font-size: 90px !important
+    font-size: 80px !important
 }
 
 
@@ -322,7 +324,7 @@ h1{
 /* Inicia Our Section */
 
 .repeat-img {
-    background-sizee: contain;
+    background-size: contain;
     background-repeat: repeat;
 }
 .menu-tab-wp {
@@ -728,6 +730,9 @@ h1, h2, h3, h4, h5, h6 {
 
     #whatsappButton {
         display: none !important;
+    }
+    .banner-text .btn {
+        margin-bottom: 30px; /* Ajusta el valor según el espacio deseado */
     }
 
 }
