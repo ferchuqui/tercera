@@ -206,6 +206,10 @@ h1{
     opacity: 0.7;
     text-transform: uppercase;
 }
+.brands-box img {
+    height: 120px
+}
+
                  /* Termina Brand */
 
 
@@ -557,13 +561,13 @@ h1{
 /* Botón de WhatsApp */
 #whatsappButton {
     position: fixed;
-    bottom: 270px; /* Distancia desde el borde inferior */
+    bottom: 170px; /* Distancia desde el borde inferior */
     right: 80px; /* Distancia desde el borde derecho */
     z-index: 1000; /* Asegura que esté sobre otros elementos */
     background-color:transparent; /* Color de fondo verde WhatsApp */
     border-radius: 50%; /* Hace el botón circular */
     
-    padding: 1px;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -571,8 +575,8 @@ h1{
 }
 
 #whatsappButton img {
-    max-width: 100%;
-    max-height: 100%;
+    width: 120px;
+    height: 120px;
 }
 
 #whatsappButton:hover {
@@ -753,13 +757,12 @@ h1, h2, h3, h4, h5, h6 {
         width: 60%; /* Ajusta el tamaño de los logos para móviles */
         text-align: center; /* Centra los logos dentro de su contenedor */
         display: block;
+        background-color: red;
     }
 
     .brands-box img {
-        width: 100%; /* Los logos ocuparán el 100% del contenedor reducido */
-        height: auto; /* Mantiene la proporción de los logos */
-        margin: 0 auto; /* Asegura que no haya márgenes extra que causen overflow */
-        display: block;
+        width: 240px;
+        height: 240px;
         
     }
     
