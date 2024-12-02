@@ -757,7 +757,7 @@ h1, h2, h3, h4, h5, h6 {
         width: 60%; /* Ajusta el tamaño de los logos para móviles */
         text-align: center; /* Centra los logos dentro de su contenedor */
         display: block;
-        background-color: red;
+        
     }
 
     .brands-box img {
@@ -765,7 +765,17 @@ h1, h2, h3, h4, h5, h6 {
         height: 240px;
         
     }
-    
+    .about-video {
+        width: 100%;
+        height: auto; /* Ajusta la altura automáticamente */
+    }
+
+    .about-video-img {
+        width: 100%;
+        height: auto; /* Ajusta automáticamente según el ancho */
+        max-height: 300px; /* Limita la altura máxima */
+        object-fit: cover; /* Evita deformaciones */
+    }
 
 
 }
