@@ -194,7 +194,7 @@ document.addEventListener("DOMContentLoaded", function () {
         snowflake.classList.add('snowflake');
 
         // Posición inicial
-        snowflake.style.left = Math.random() * 90 + 'vw'; // Posición horizontal aleatoria
+        snowflake.style.left = Math.random() * 80 + 'vw'; // Posición horizontal aleatoria
         snowflake.style.animationDuration = Math.random() * 2 + 1.5 + 's'; // Velocidad aleatoria (más rápido)
         snowflake.style.opacity = Math.random(); // Transparencia aleatoria
         snowflake.style.fontSize = Math.random() * 30 + 10 + 'px'; // Tamaño aleatorio más grande
