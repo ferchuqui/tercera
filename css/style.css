@@ -757,6 +757,9 @@ h1, h2, h3, h4, h5, h6 {
     .brands-box img {
         width: 100%; /* Los logos ocuparán el 100% del contenedor reducido */
         height: auto; /* Mantiene la proporción de los logos */
+        margin: 0 auto; /* Asegura que no haya márgenes extra que causen overflow */
+        display: block;
+        
     }
     
 
