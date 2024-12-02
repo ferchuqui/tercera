@@ -745,13 +745,14 @@ h1, h2, h3, h4, h5, h6 {
         flex-direction: column; /* Organiza los logos en columna */
         align-items: center; /* Centra los logos horizontalmente */
         gap: 30px; /* Espaciado entre los logos */
-        width: 100%; /* Asegúrate de que el contenedor no exceda el ancho del viewport */
+        width: 60%; /* Asegúrate de que el contenedor no exceda el ancho del viewport */
         
     }
 
     .brands-box {
         width: 60%; /* Ajusta el tamaño de los logos para móviles */
         text-align: center; /* Centra los logos dentro de su contenedor */
+        display: block;
     }
 
     .brands-box img {
