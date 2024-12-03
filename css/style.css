@@ -793,7 +793,9 @@ h1, h2, h3, h4, h5, h6 {
         max-height: 300px; /* Limita la altura máxima */
         object-fit: cover; /* Evita deformaciones */
     }
-
+    .sec-img img{
+        width: 50%;
+    }
 
 }
 /* Tamaño para pantallas XL (1200px a 1399px) */
