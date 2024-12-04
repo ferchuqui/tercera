@@ -10,7 +10,11 @@ body {
 }
 
 /* Estilo general para imágenes */
-
+video {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+}
 /* Navbar */
 .navbar {
     display: flex;
