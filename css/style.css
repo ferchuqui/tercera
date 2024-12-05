@@ -7,6 +7,7 @@ body {
     text-rendering: optimizeLegibility !important;
     background: #f3f3f5;
     scroll-behavior: smooth;
+    /* box-sizing: border-box */
 }
 
 /* Estilo general para imágenes */
@@ -804,7 +805,7 @@ h1, h2, h3, h4, h5, h6 {
     .row{
         padding-left: 25px;
         max-width: 100%;
-        
+        box-sizing: border-box;
     }
 
     
