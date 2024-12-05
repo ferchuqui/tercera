@@ -383,6 +383,7 @@ h1{
 }
 .dish-box-wp{
     display: none;
+    padding: 0;
 }
 
 .dish-box {
@@ -800,6 +801,13 @@ h1, h2, h3, h4, h5, h6 {
     .sec-img img{
         width: 50%;
     }
+    .row{
+        padding-left: 25px;
+        max-width: 100%;
+        
+    }
+
+    
 
 }
 /* Tamaño para pantallas XL (1200px a 1399px) */
