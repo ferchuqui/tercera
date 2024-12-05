@@ -397,7 +397,7 @@ h1{
     transition: 0.8s cubic-bezier(0.22, 0.78, 0.45, 1.02);
 }
 .dish-box:hover{
-    transform: scale(1.1);
+    transform: scale(0.9);
 }
 
 .dist-img {
