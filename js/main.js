@@ -1,7 +1,7 @@
 $(document).ready(function ($) {
-    "use strict";
+    "use strict"; 
 
-
+/* Inicia Swiper */
     var book_table = new Swiper(".book-table-img-slider", {
         slidesPerView: 1,
         spaceBetween: 20,
@@ -12,7 +12,7 @@ $(document).ready(function ($) {
         },
         speed: 2000,
         effect: "coverflow",
-        coverflowEffect: {
+        coverflowEffect : {
             rotate : 3,
             stretch : 2,
             depth : 100,
@@ -29,7 +29,7 @@ $(document).ready(function ($) {
             clickable: true,
         },
     });
-
+/* Termina swipper */
 
     var team_slider = new Swiper(".team-slider", {
         slidesPerView: 3,
@@ -72,6 +72,8 @@ $(document).ready(function ($) {
             },
         },
     });
+
+    /* Inicia Filtros */
     
     jQuery(".filters").on("click", function () {
         jQuery("#menu-dish").removeClass("bydefault_show");
@@ -96,6 +98,8 @@ $(document).ready(function ($) {
         };
         filterList.init();
     });
+
+    /* Termina Filtros */
 
     jQuery(".menu-toggle").click(function() {
         jQuery(".main-navigation").toggleClass("toggled");

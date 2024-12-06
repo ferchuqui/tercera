@@ -350,7 +350,6 @@ h1{
     z-index: 2;
 }
 .menu-tab ul li, .menu-tab ul .filter-active{
-    /* background-color: red; */
     display: inline-flex;
     text-transform: capitalize;
     font-size: 18px;
@@ -704,8 +703,76 @@ h1, h2, h3, h4, h5, h6 {
 .call-now a:hover, .contact-info a:hover {
     color: #fcbc30;
 }
-/* Termina Book Section */
 
+#gallery {
+    padding-top: 120px;
+    background-color: lightblue;
+}
+/* Termina Book Section */
+.book-table-img {
+    height: 70vh;
+    min-height: 500px;
+    border-radius: 30px;
+}
+.back-img{
+    background-position: center;
+    background-size: cover;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+    display: none;
+}
+.swiper-button-wp{
+    position: relative;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.swiper-button-next, .swiper-button-prev {
+    position: unset;
+    width: 60px;
+    height: 60px;
+    display: inline-flex;
+    font-size: 24px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0;
+    color: #0d0d25;
+    background: #ffffff;
+    box-shadow: -20px 20px 60px #d4d4d4, 20px -20px 60px #ffffff;
+    padding-top: 1px;
+    padding-right: 2px;
+    transition: 0.3s;
+}
+.swiper-button-next {
+    box-shadow: 20px 20px 60px #d4d4d4, -20px -20px 60px #ffffff;
+    padding-left:3px;
+}
+.swiper-button-prev:hover{
+    box-shadow: inset 5px 5px 20px #d4d4d4, inset -5px -5px 20px #ffffff;
+}
+
+.swiper-button-next:hover {
+    box-shadow: inset -5px 5px 20px #d4d4d4, inset 5px -5px 20px #ffffff;
+    color: #fcbc30;
+}
+
+.swiper-pagination {
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 60px;
+    background: linear-gradient(145deg, #ececec, #ffffff);
+    max-width: fit content;
+    left: 50% !important;
+    transform: translate(-50%, 0);
+    bottom: 0 !important;
+    color: #000;
+}
+.swiper-pagination-bullet-active {
+    background: #fcbc30;
+    width: 30px;
+}
 
 
 
