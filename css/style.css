@@ -775,12 +775,162 @@ h1, h2, h3, h4, h5, h6 {
     background: #fcbc30;
     width: 30px;
 }
+/* ******************* */
 
+/* Our team */
+.team-slider{
+    position: relative;
+}
+/* borde blanco sombreado*/
+.team-box{
+    padding: 20px;
+    border-radius: 30px;
+    background: linear-gradient(145deg, #ececec, #ffffff);
+    box-shadow: 28px 28px 45px #e6e6e6, -28px -28px 45px #ffffff;
+    transition: 0.8s cubic-bezier(0.22, 0.78, 0.45, 1.02);
+}
+.team-box:hover{
+    transform: scale(1.03);
+}
+.team-img{
+    width: 100%;
+    height: 480px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 9px 9px 18px rgb(194 194 194 / 0.5), -9px -9px 18px rgb(255 255 255 /0.5);
+}
+.team-box .h3-title{
+    text-transform: capitalize;
+    color: #0d0d25;
+    font-weight: 600;;
+}
+.social-icon {
+    margin: 15px 0px 10px;
+}
+.social-icon ul li{
+    display: inline-block;
+    margin: 0 6px;
+}
+.social-icon ul li:last-child{
+    margin-right: 0;
+}
+.social-icon ul li:first-child {
+    margin-left: 0;
+}
+.social-icon ul li a{
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    box-shadow: 4px 4px 8px #d0d0d0, -4px -4px 8px #ffffff;
+    color: #0d0d25;
+    font-size: 19px;
+}
 
+.social-icon ul li a:hover{
+    background: #ff8243;
+}
+.social-icon ul li a:hover i{
+    color: #ffffff !important;
+}
 
+/*  Termina Our team */
 
+/* Inicia Testimonial */
 
+.testimonials-img{
+    position: relative;
+}
+/* Especifica la altura de la imagen */
+.testimonials-img img {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    width: calc(100% +5vw);
+    max-width: initial;
+}
+.testimonials-box{
+    display: flow-root;
+    position: relative;
+    padding: 30px;
+    padding-top: 0;
+    border-radius: 30px;
+    margin: 50px 0 30px;
+    background: linear-gradient(145deg, #ececec, #ffffff);
+    box-shadow: 28px 28px 45px #e6e6e6, -28px -28px 45px #ffffff;
+    transition: 0.8s cubic-bezier(0.22, 0.78, 0.45, 1.02);
+}
 
+.testimonials-box:hover{
+    transform: scale(1.05);
+    z-index: 2;
+}
+.testimonials-box-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+/* la foto con la imagen de opinion */
+.testimonials-box-img{
+    min-width: 100px;
+    min-height: 100px;
+    border-radius: 50%;
+    margin-top: -50px;
+    box-shadow: 10px 10px 60px #d4d4d4;
+}
+.testimonials-box-text .h3-title{
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    /* Nombre Opinion */
+}
+.testimonials-box-text p{
+    /* Copete opinion */ 
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient:vertical;
+    overflow: hidden;
+}
+.star-rating-wp{
+    display: block;
+}   
+.star-rating{
+    font-size: 22px;
+    position: relative;
+    margin-top: 20px;
+    display: inline-block;
+}
+.star-rating::before{
+    content: "\f005\f005\f005\f005\f005";
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    color: #c8c8c8;
+    /* Las estrellitas */
+    filter: drop-shadow(0  0.6rem 0.3rem rgba(0, 0, 0, 0.05));
+    letter-spacing: 4px;
+}
+.star-rating__fill{
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    animation: fill-star 2s ease-in-out;
+}
+.star-rating::after{
+    content: "\f005\f005\f005\f005";
+    background-color: green;
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    color: #ff8243;
+    letter-spacing: 4px;
+}
+
+/* Termina Testimonial */
 
 
 

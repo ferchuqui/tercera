@@ -30,7 +30,7 @@ $(document).ready(function ($) {
         },
     });
 /* Termina swipper */
-
+/* Inicia our team  */
     var team_slider = new Swiper(".team-slider", {
         slidesPerView: 3,
         spaceBetween: 30,
@@ -72,6 +72,8 @@ $(document).ready(function ($) {
             },
         },
     });
+
+    /* Termina our team */
 
     /* Inicia Filtros */
     
