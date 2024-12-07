@@ -1071,6 +1071,18 @@ h1, h2, h3, h4, h5, h6 {
     .faq-row{
         column-count: 1;
     }
+
+    .two-col-sec .sec-img img {
+        width: 100%; /* Ajusta el ancho al 100% del contenedor */
+        height: auto; /* Mantiene las proporciones */
+        max-width: 400px; /* Tamaño máximo para evitar que se expanda demasiado */
+        display: block; /* Asegura que se comporte como un bloque */
+        margin: 0 auto; /* Centra horizontalmente la imagen */
+    }
+
+    .two-col-sec .sec-text {
+        text-align: center; /* Centra el texto */
+    }
     
 
 }
