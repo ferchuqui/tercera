@@ -1068,7 +1068,9 @@ h1, h2, h3, h4, h5, h6 {
     .testimonials-img {
         display: none;
     }
-
+    .faq-row{
+        column-count: 1;
+    }
     
 
 }
