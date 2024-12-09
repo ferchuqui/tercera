@@ -1318,7 +1318,7 @@ p {
         width: 100%;
     }
     .newsletter-form .form-input {
-        width: 100%; /* Aumenta el ancho del input */
+        width: 90%; /* Aumenta el ancho del input */
         max-width: 600px; /* Tamaño máximo */
         padding: 15px; /* Aumenta el padding interno */
         font-size: 16px; /* Aumenta el tamaño del texto */
