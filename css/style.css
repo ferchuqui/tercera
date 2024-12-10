@@ -1267,6 +1267,24 @@ p {
         height: 240px;
         
     }
+    /* Maneja el menu de idiomas */
+    .menu-tab ul{
+        white-space: nowrap;
+        overflow: hidden;
+        overflow-x: auto;
+    }
+    .menu-tab::after{
+        content:"";
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100px;
+        height: 100%;
+        pointer-events: none;
+        opacity: 0.2;
+        border-radius: 0 60px 60px 0;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 100 );
+    }
     .about-video {
         width: 100%;
         height: auto; /* Ajusta la altura automáticamente */
