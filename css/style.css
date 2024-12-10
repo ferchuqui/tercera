@@ -1270,6 +1270,9 @@ p {
         width: 100%;
         height: auto; /* Ajusta la altura automáticamente */
     }
+    img {
+        object-fit: contain;
+    }
 
     .about-video-img {
         width: 100%;
