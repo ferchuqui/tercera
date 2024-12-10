@@ -1185,8 +1185,73 @@ p {
 }
 /* Termina Footer */
 
-
-
+#contact {
+    color: #333;
+  }
+  
+  #contact h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ff8243;
+    margin-bottom: 20px;
+  }
+  
+  .custom-form {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+  }
+  
+  .custom-form .form-label {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .custom-form .form-control {
+    width: 100%; /* Ocupa todo el ancho disponible dentro del formulario */
+    max-width: 600px; /* Tamaño máximo */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    margin: 0 auto; /* Centra el input */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+}
+  
+  .custom-form .form-control:focus {
+    border-color: #ff8243;
+    box-shadow: 0 0 5px rgba(255, 130, 67, 0.5);
+  }
+  
+  .custom-form textarea.form-control {
+    width: 100%; /* Ocupa todo el ancho */
+    max-width: 600px; /* Tamaño máximo */
+    resize: none; /* Evita redimensionamiento */
+}
+  
+.custom-form button {
+    width: 50%; /* Botón centrado con tamaño adecuado */
+    max-width: 200px;
+    margin: 20px auto 0;
+    display: block; /* Centra el botón */
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 25px;
+    background-color: #ff8243;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+  
+  .custom-form button:hover {
+    background-color: #e26a2c;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
 
 
 
