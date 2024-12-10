@@ -1369,6 +1369,21 @@ p {
     .newsletter-form button:hover {
         background-color: #e26a2c; /* Cambia el color al pasar el mouse */
     }
+
+    .footer-info{
+        margin-bottom: 50px;
+    }
+    .footer-flex-box{
+        display: block;
+        margin: 0;
+    }
+    .footer-flex-box>div{
+        padding: 0;
+        margin-bottom: 30px;
+    }
+    .footer-menu ul {
+        max-width: 300px;
+    }
 }
 
 
