@@ -1252,7 +1252,28 @@ p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   }
   
-
+  #map {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+  }
+  
+  #map h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  #map p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .map-container {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
 
 
 
