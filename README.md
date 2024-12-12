@@ -16,4 +16,4 @@ Se ha usado Swipper para mostrar distintos paisajes y los profesores Ficticios q
 Si encuentras problemas para ver el map de google maps visita la pagina publicada en https://fernando.farji.me/tercera/ recuerda que la reunion es ficticia... pero te recomiendo el lugar para aprender idiomas.
 
 
-
+la pagina tiene metakeywords, y metadescription, ademas analiza las estadisticas con google analytics
