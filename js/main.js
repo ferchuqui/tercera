@@ -293,6 +293,53 @@ document.addEventListener("DOMContentLoaded", function () {
 
 /* Termina Desplazamiento de menu */
 
+document.addEventListener('DOMContentLoaded', () => {
+    const cart = [];
+    const cartItems = document.getElementById('cart-items');
+    const clearCartBtn = document.getElementById('clear-cart');
+  
+    // Manejar botón "Agregar al carrito"
+    document.querySelectorAll('.dish-add-btn').forEach(button => {
+      button.addEventListener('click', (event) => {
+        const item = event.target.closest('.dish-box');
+        const title = item.querySelector('.h3-title').innerText;
+        const rating = item.querySelector('.dish-rating').innerText;
+  
+        cart.push({ title, rating });
+        updateCart();
+      });
+    });
+  
+    // Actualizar vista del carrito
+    function updateCart() {
+      cartItems.innerHTML = '';
+      cart.forEach((item, index) => {
+        const li = document.createElement('li');
+        li.innerHTML = `
+          ${item.title} - ${item.rating} estrellas
+          <button class="btn btn-sm btn-danger" data-index="${index}">Eliminar</button>
+        `;
+        cartItems.appendChild(li);
+      });
+  
+      // Manejar eliminación de elementos
+      document.querySelectorAll('.btn-danger').forEach(button => {
+        button.addEventListener('click', (event) => {
+          const index = event.target.dataset.index;
+          cart.splice(index, 1);
+          updateCart();
+        });
+      });
+    }
+  
+    // Vaciar carrito
+    clearCartBtn.addEventListener('click', () => {
+      cart.length = 0;
+      updateCart();
+    });
+  });
+  
+
 /* Festejo de navidad */
 
 

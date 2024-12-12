@@ -528,7 +528,41 @@ h1{
 
 
 /* Termina Efecto nieve  */
-
+.cart {
+    position: fixed;
+    right: 20px;
+    top: 80px;
+    width: 300px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    z-index: 1000;
+  }
+  
+  .cart h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .cart ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .cart ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+  }
+  
+  .cart .btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+  
 
 /* Inicia Boton Sugerencia */
 
