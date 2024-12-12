@@ -405,7 +405,17 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
   });
-  
+  document.addEventListener("DOMContentLoaded", function () {
+    const navItems = document.querySelectorAll(".nav-link"); // Selecciona los elementos del menú
+    const hoverSound = new Audio("img/hover.mp3"); // Ruta del archivo de sonido
+
+    navItems.forEach(item => {
+        item.addEventListener("mouseover", () => {
+            hoverSound.currentTime = 0; // Reinicia el sonido cada vez
+            hoverSound.play();
+        });
+    });
+});
 /* Festejo de navidad */
 
 
