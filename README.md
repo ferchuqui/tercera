@@ -13,5 +13,7 @@ En el Icono usuario en un futuro, (ya fue probado) identificaremos al usuario y 
 
 Se ha usado Swipper para mostrar distintos paisajes y los profesores Ficticios que forman parte del proyecto, en las fotos se podrian agregar overlays explicando las escenas.
 
+Si encuentras problemas para ver el map de google maps visita la pagina publicada en https://fernando.farji.me/tercera/ recuerda que la reunion es ficticia... pero te recomiendo el lugar para aprender idiomas.
+
 
 
