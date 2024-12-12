@@ -419,20 +419,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    const carrito = document.getElementById("carrito");
-    const toggleCarrito = document.getElementById("toggleCarrito");
-
-    toggleCarrito.addEventListener("click", function () {
-        if (carrito.style.display === "none") {
-            carrito.style.display = "block";
-            toggleCarrito.textContent = "Ocultar Carrito";
-        } else {
-            carrito.style.display = "none";
-            toggleCarrito.textContent = "Mostrar Carrito";
-        }
-    });
-});
 
 /* Festejo de navidad */
 
