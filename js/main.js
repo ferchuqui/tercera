@@ -339,7 +339,73 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
   
-
+// Carrito de Compras
+document.addEventListener('DOMContentLoaded', () => {
+    const cart = [];
+    const cartItemsModal = document.getElementById('cart-items-modal');
+    const clearCartBtn = document.getElementById('clear-cart');
+  
+    loadCartFromLocalStorage();
+  
+    // Manejar botón "Agregar al carrito"
+    document.querySelectorAll('.dish-add-btn').forEach(button => {
+      button.addEventListener('click', (event) => {
+        const item = event.target.closest('.dish-box');
+        const title = item.querySelector('.h3-title').innerText;
+        const rating = item.querySelector('.dish-rating').innerText;
+  
+        cart.push({ title, rating });
+        updateCart();
+      });
+    });
+  
+    // Botón para vaciar el carrito
+    clearCartBtn.addEventListener('click', () => {
+      cart.length = 0;
+      saveCartToLocalStorage();
+      updateCart();
+    });
+  
+    // Función para actualizar la vista del carrito
+    function updateCart() {
+      cartItemsModal.innerHTML = '';
+      cart.forEach((item, index) => {
+        const li = document.createElement('li');
+        li.innerHTML = `
+          ${item.title} - ${item.rating} estrellas
+          <button class="btn btn-sm btn-danger" data-index="${index}">Eliminar</button>
+        `;
+        cartItemsModal.appendChild(li);
+      });
+  
+      // Manejar eliminación de elementos
+      document.querySelectorAll('.btn-danger').forEach(button => {
+        button.addEventListener('click', (event) => {
+          const index = event.target.dataset.index;
+          cart.splice(index, 1);
+          saveCartToLocalStorage();
+          updateCart();
+        });
+      });
+  
+      saveCartToLocalStorage();
+    }
+  
+    // Función para guardar en Local Storage
+    function saveCartToLocalStorage() {
+      localStorage.setItem('shoppingCart', JSON.stringify(cart));
+    }
+  
+    // Función para cargar desde Local Storage
+    function loadCartFromLocalStorage() {
+      const storedCart = localStorage.getItem('shoppingCart');
+      if (storedCart) {
+        cart.push(...JSON.parse(storedCart));
+        updateCart();
+      }
+    }
+  });
+  
 /* Festejo de navidad */
 
 

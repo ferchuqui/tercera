@@ -10,7 +10,7 @@ body {
     text-rendering: optimizeLegibility !important;
     background: #f3f3f5;
     scroll-behavior: smooth;
-    /* box-sizing: border-box */
+    /* box-sizing: border-box;*/
 }
 
 /* Estilo general para imágenes */
@@ -25,7 +25,7 @@ video {
     justify-content: space-between;
     align-items: center;
     
-    padding: 0.5rem 1 rem;
+    padding: 0.5rem 1rem;
     background-color: #f8f9fa; /* Fondo claro */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
 }
