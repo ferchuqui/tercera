@@ -418,8 +418,46 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    const userIcon = document.getElementById('randomUserIcon');
 
+    // Función para obtener datos de la API
+    function fetchRandomUser() {
+        fetch('https://randomuser.me/api/')
+            .then(response => response.json())
+            .then(data => {
+                const userImageUrl = data.results[0].picture.medium; // URL de la imagen
+                userIcon.src = userImageUrl; // Actualiza el ícono
+            })
+            .catch(error => console.error('Error fetching random user:', error));
+    }
 
+    // Llama la función al cargar la página
+    fetchRandomUser();
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const userIcon = document.getElementById('randomUserIcon');
+
+    // Función para obtener datos de la API
+    function fetchRandomUser() {
+        fetch('https://randomuser.me/api/')
+            .then(response => response.json())
+            .then(data => {
+                const user = data.results[0];
+                const userImageUrl = user.picture.medium; // URL de la imagen
+                const userName = `${user.name.first} ${user.name.last}`; // Nombre completo
+
+                // Actualiza la imagen y el atributo 'title' para mostrar el nombre
+                userIcon.src = userImageUrl;
+                userIcon.title = `Nombre: ${userName}`;
+            })
+            .catch(error => console.error('Error fetching random user:', error));
+    }
+
+    // Llama la función al cargar la página
+    fetchRandomUser();
+});
 /* Festejo de navidad */
 
 

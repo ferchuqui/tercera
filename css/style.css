@@ -50,6 +50,21 @@ i{
     color: #ff8243 !important
 }
 
+#randomUserIcon {
+    width: 80px; /* Aumenta el tamaño */
+    height: 80px; /* Aumenta el tamaño */
+    border-radius: 50%; /* Mantiene el círculo */
+    border: 3px solid #ccc; /* Agrega un borde para mayor visibilidad */
+    padding: 8px; /* Espaciado interno opcional */
+    background-color: #f8f9fa; /* Fondo opcional */
+    transition: transform 0.3s ease; /* Efecto suave al hacer hover */
+}
+
+#randomUserIcon:hover {
+    transform: scale(1.1); /* Agranda al pasar el cursor */
+    border-color: #007bff; /* Cambia el color del borde */
+}
+
 /* Animación navideña */
 @keyframes christmas-blink {
     0% {
@@ -481,6 +496,7 @@ h1{
 }
 .dist-bottom-row ul li{
     display: flex;
+    
     align-items: center;
 }
 .dist-bottom-row ul li b {
@@ -496,6 +512,7 @@ h1{
     background: linear-gradient(145deg, #ffc954, #ffbc00);
     box-shadow: inset 4px 4px 8px #d6a029, inset -4px -4px 8px #ffd837;
 }
+
 
 .dish-add-btn i {
     color: #ffffff;
@@ -562,8 +579,21 @@ h1{
     width: 100%;
     margin-top: 10px;
   }
+  .cart-container {
+    margin-top: 20px; /* Baja el ícono 20px */
+}
   
+  .navbar .uil-shopping-cart-alt {
+    font-size: 1.5rem; /* Asegura un tamaño uniforme con otros íconos */
+    margin: 0 10px; /* Espaciado horizontal */
+    vertical-align: middle; /* Alineación vertical */
+    color: #555; /* Color consistente */
+    transition: color 0.3s ease-in-out;
+}
 
+.navbar .uil-shopping-cart-alt:hover {
+    color: #007bff; /* Color al pasar el cursor */
+}
 /* Inicia Boton Sugerencia */
 
 /* Botón sugerencia */
